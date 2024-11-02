@@ -1,0 +1,105 @@
+/* src/styles/Hero.css */
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Align items to the start */
+    align-items: center;
+    overflow: hidden; /* Hide overflow */
+    background-color: var(--background-color);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite; /* Apply animation */
+}
+
+.hero-sphere {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw; /* Reduce width to fit the sphere on the left */
+    height: 100vh; /* Full height for the canvas */
+    z-index: 1; /* Ensure the sphere canvas is above the background */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the 3D scene */
+    padding: 0 2rem; /* Optional padding for text */
+    text-align: center; /* Center text for better alignment */
+}
+
+.hero-text {
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-button {
+    margin-top: 20px; /* Space between text and button */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.hero-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Change to a lighter color on hover */
+    transform: scale(1.05); /* Scale up the button */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem; /* Smaller font size for h1 */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Smaller font size for paragraph */
+    }
+
+    .hero-sphere {
+        display: none; /* Hide the sphere on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Further reduce font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Further reduce font size for paragraph */
+    }
+
+    .hero-button {
+        padding: 8px 16px; /* Smaller padding for button */
+        font-size: 1rem; /* Smaller font size for button */
+    }
+}

@@ -1,0 +1,117 @@
+/* Global styles in App.css */
+:root {
+  --primary-color: #1c1c1e;
+  --secondary-color: #f5f5f7;
+  --accent-color: #5ac8fa;
+  --background-color: #121212;
+  --card-bg-color: #282828;
+  --highlight-color: #ff2d55;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* src/styles/App.css */
+
+/* Slide-in from the left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in from the right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide-in from the bottom */
+@keyframes slideInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* src/styles/App.css */
+
+/* Hidden by default */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Slide-in animations */
+.slide-in-left {
+  animation: slideInLeft 1.3s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1.3s ease-out forwards;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 1s ease-out forwards;
+}
+
+ 

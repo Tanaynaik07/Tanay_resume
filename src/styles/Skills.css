@@ -1,0 +1,54 @@
+/* src/styles/Skills.css */
+.skills {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--card-bg-color);
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Responsive grid with cards */
+    gap: 2rem;
+}
+
+.skills-card {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: #fff;
+    border: 2px solid transparent; /* Initially transparent border */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and shadow */
+}
+
+.skills-card:hover {
+    border-color: var( --accent-color); /* Change border color on hover */
+    box-shadow: 0 0 10px var(--accent-color); /* Optional: add shadow for more effect */
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin-top: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Space between skill items */
+    transition: transform 0.3s, font-weight 0.3s; /* Add transitions for individual items */
+}
+
+.icon {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-right: 0.5rem; /* Space between icon and name */
+}
+
+.skill-name {
+    font-size: 1.2rem; /* Skill name size */
+}
