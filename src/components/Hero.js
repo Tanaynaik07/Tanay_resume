@@ -8,7 +8,7 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Hero = () => {
     const heroRef = useRef();
-    const ref = useScrollAnimation('slide-in-left');
+    const ref = useScrollAnimation('slide-in-bottom');
     useEffect(() => {
         // Existing Three.js code remains unchanged
         const scene = new THREE.Scene();
