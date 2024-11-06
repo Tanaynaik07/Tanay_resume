@@ -56,7 +56,7 @@ const skillCategories = [
 ];
 
 const Skills = () => {
-    const ref = useScrollAnimation('slide-in-right');
+    const ref = useScrollAnimation('slide-in-bottom');
     return (
         <section ref={ref} className="skills hidden" id="skills">
             <h2>My Skills</h2>
