@@ -95,7 +95,8 @@ const Projects = () => {
                 {projects.map((project, index) => (
                     <div key={index} className="project-card"
                          onMouseEnter={() => setIsHovered(true)} 
-                         onMouseLeave={() => setIsHovered(false)} 
+                         onMouseLeave={() => setIsHovered(false)}
+onClick={() => window.location.href =  {project.demo}
                     >
                         <img src={project.imgSrc} alt={`${project.title} screenshot`} className="project-image" />
                         <h3>{project.title}</h3>
