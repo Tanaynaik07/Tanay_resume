@@ -4,7 +4,7 @@ import "../styles/contact.css"
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Contact = () => {
-  const ref = useScrollAnimation('slide-in-right');
+  const ref = useScrollAnimation('slide-in-bottom');
   return (
 
     <div style={{marginTop:'2rem',marginBottom:'2rem'}} className="hidden" ref={ref}>
