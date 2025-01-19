@@ -1,4 +1,3 @@
-/* src/styles/Skills.css */
 .skills {
     padding: 4rem 2rem;
     text-align: center;
@@ -13,7 +12,7 @@
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Responsive grid with cards */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit columns to screen size */
     gap: 2rem;
 }
 
@@ -22,33 +21,91 @@
     background-color: var(--primary-color);
     border-radius: 8px;
     color: #fff;
-    border: 2px solid transparent; /* Initially transparent border */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and shadow */
+    border: 2px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .skills-card:hover {
-    border-color: var( --accent-color); /* Change border color on hover */
-    box-shadow: 0 0 10px var(--accent-color); /* Optional: add shadow for more effect */
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
 }
 
 .skills-list {
     display: flex;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column;
     margin-top: 1rem;
 }
 
 .skill-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem; /* Space between skill items */
-    transition: transform 0.3s, font-weight 0.3s; /* Add transitions for individual items */
+    margin-bottom: 1rem;
+    transition: transform 0.3s, font-weight 0.3s;
 }
 
 .icon {
-    font-size: 1.5rem; /* Adjust icon size */
-    margin-right: 0.5rem; /* Space between icon and name */
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 .skill-name {
-    font-size: 1.2rem; /* Skill name size */
+    font-size: 1.2rem;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .skills {
+        padding: 3rem 1rem;
+    }
+
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        gap: 1.5rem;
+    }
+
+    .skills-card {
+        padding: 1.5rem;
+    }
+
+    .skill-item {
+        margin-bottom: 0.75rem;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    .skill-name {
+        font-size: 1rem;
+    }
+}
+
+/* Media queries for extra small screens */
+@media (max-width: 480px) {
+    .skills {
+        padding: 2rem 1rem;
+    }
+
+    .skills h2 {
+        font-size: 1.8rem;
+    }
+
+    .skills-card {
+        padding: 1rem;
+    }
+
+    .skill-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .icon {
+        font-size: 1rem;
+    }
+
+    .skill-name {
+        font-size: 0.9rem;
+    }
 }
