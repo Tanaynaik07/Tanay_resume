@@ -8,9 +8,20 @@ import tic from "../assest/imgs/tic.png";
 import robo from "../assest/imgs/robo.png"
 import book from '../assest/imgs/book.png';
 import shoe from '../assest/imgs/shoe.jpg';
+import finance from "../assest/imgs/finance.png";
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const projects = [
+
+    {
+        title: 'Finance-manager',
+        description: 'Full stack web app to manage your finance, your savings and expenses',
+        imgSrc:finance ,
+        tools: ['EJS','ExpressJS', 'Node.js'],
+        link: 'https://github.com/Tanaynaik07/finance-management',
+        demo: 'https://finance-management-54yr.onrender.com/',
+         
+    },
     {
         title: 'Legally',
         description: 'A front-end website to connect clients with correct lawyers',
@@ -89,7 +100,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <section className={`projects    ${isHovered ? 'blurred' : ''}`} id="projects" >
+        <section className={`projects     `} id="projects" >
             <h2>My Projects</h2>
             <div className="projects-grid">
                 {projects.map((project, index) => (

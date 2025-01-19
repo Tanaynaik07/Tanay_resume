@@ -77,17 +77,25 @@
 
 
 @media (min-width: 768px) {
-    /* Effect for scaling and selective blurring */
+    /* Default state, no blur */
+.projects-grid .project-card {
+    filter: none;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Apply scaling and clear the filter for the hovered card */
 .projects-grid .project-card:hover {
     transform: scale(1.25); /* Scale up the hovered card */
     z-index: 10; /* Bring to front */
     filter: none; /* Keep the hovered card clear */
     box-shadow: 0 12px 24px rgba(0, 196, 255, 0.4); /* Enhanced shadow */
 }
-    /* Apply blur to all cards when one is hovered */
+
+/* Apply blur to non-hovered cards when any card is hovered */
 .projects-grid:hover .project-card:not(:hover) {
     filter: blur(4px); /* Blur only non-hovered cards */
 }
+
 }
 
 
