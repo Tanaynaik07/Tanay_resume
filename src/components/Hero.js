@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/Hero.css';
 import * as THREE from 'three';
 import { ImprovedNoise } from 'three/examples/jsm/math/ImprovedNoise';
-import resume from '../assest/Tanay_resume (29-01-2025) 1.pdf'; // Adjust the path to your resume file
+import resume from '../assest/Tanay_resume (01-02-2025).pdf'; // Adjust the path to your resume file
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Hero = () => {
