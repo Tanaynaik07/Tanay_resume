@@ -47,7 +47,7 @@ const projects = [
         imgSrc:  tic,
         tools: ['JS', 'CSS', 'HTML'],
         link: 'https://github.com/Tanaynaik07/TicTocToe',
-        demo: 'tic-toc-toe-nine.vercel.app',
+        demo: "https://tic-toc-toe-nine.vercel.app/",
         
     },
     {
@@ -65,7 +65,7 @@ const projects = [
         imgSrc:  shoe,
         tools: ['JS', 'CSS', 'HTML'],
         link: 'https://github.com/Tanaynaik07/Shoe_store',
-        demo: 'shoe-store-six-puce.vercel.app',
+        demo: 'https://shoe-store-six-puce.vercel.app/',
         
     },
     
