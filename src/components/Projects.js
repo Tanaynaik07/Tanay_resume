@@ -9,10 +9,32 @@ import robo from "../assest/imgs/robo.png"
 import book from '../assest/imgs/book.png';
 import shoe from '../assest/imgs/shoe.jpg';
 import finance from "../assest/imgs/finance.png";
+import fakenews from "../assest/imgs/fakenews.jpg"
+import ats from "../assest/imgs/ats-checker.jpg"
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const projects = [
+    {
+        title: 'ATS Score Checker',
+        description: 'Full stack web app to evaluate resumes and job descriptions, providing ATS compatibility scores and actionable suggestions using AI and keyword analysis',
 
+        imgSrc:ats ,
+        tools: ['Node.js', 'Express.js', 'EJS', 'Python', 'scikit-learn', 'pandas', 'numpy', 'joblib', 'Multer', 'Cors'],
+
+        link: 'https://github.com/Tanaynaik07/Ats-checker',
+        demo: 'https://ats-checker-sigma.vercel.app/',
+         
+    },
+    {
+        title: 'Fake News Detector',
+        description: 'Full stack web app to detect fake news using machine learning',
+        imgSrc:fakenews ,
+        tools: ['Node.js', 'Express.js', 'EJS', 'Python', 'scikit-learn', 'pandas', 'numpy', 'joblib', 'Multer', 'Cors'],
+
+        link: 'https://github.com/Tanaynaik07/fakeNews',
+        demo: 'https://fakenews-frikeymzbmr6mybqp8wykw.streamlit.app/',
+         
+    },
     {
         title: 'Finance-manager',
         description: 'Full stack web app to manage your finance, your savings and expenses',
