@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://tanay-portfolio-v2-1.onrender.com/:path*",
+      "permanent": true
+    }
+  ]
+}
